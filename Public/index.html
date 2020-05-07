@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+         <p>Travel Service</p>
+            <ul>
+                <li><a href="#" class="nav-links">Avgångar</a>
+                    <ul>
+                        <li onclick="displayBuses()" class="sub-links"><a>Buss</a></li>
+                        <li onclick="displayTrains()" class="sub-links"><a>Tåg</a></li>
+                     </ul></li>
+                <li><a href="#" class="nav-links">Väder</a>
+                    <ul>
+                        <li class="sub-links"><a>Kolla vädret</a></li>
+                     </ul></li>
+                <li><a href="#" class="nav-links">Gästbok</a>
+                    <ul>
+                        <li class="sub-links"><a>Skriv Gästboksinlägg</a></li>
+                        <li class="sub-links"><a>Läs Gästboksinlägg</a></li>
+                     </ul></li>
+                <li><a href="#" class="nav-links">Checka In/Ut</a>          
+                    <ul>
+                    <li class="sub-links" onclick="checkInEmployee()"><a>Checka In Anställd</a></li>
+                    <li class="sub-links" onclick="checkInVisitor()"><a>Checka In Besökare</a></li>
+                    <li class="sub-links" onclick="checkOutEmployee()"><a>Checka ut Anställd</a></li>
+                    <li class="sub-links"><a>Checka ut Besökare</a></li>
+                    <li class="sub-links" onclick="displayPeople()"><a>Personer i lokalen</a></li>
+                 </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <br>
+    <br>
+
+    <div class="container">
+       <div class="transport"></div>
+       <a href="#" onclick="refreshPage()" class="back">Tillbaka</a>
+    </div>
+
+        <p id="clock"></p>
+
+        <div class="people">
+            <a class="text">I denna lokal befinner sig nu <span id="employees">x</span> antal anställda och <span id="visitors">x</span> antal besökare</a>
+        </div>
+
+        <div class="check-container">
+            <p class="check"></p>
+        </div>
+
+
+    <script src="app.js"></script>
+
+        
+
+
+
+    
+</body>
+</html>
